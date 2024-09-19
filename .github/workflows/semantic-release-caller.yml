@@ -4,4 +4,7 @@ on:
 
 jobs:
   call_semantic_release:
+    permissions:
+        id-token: write
+        contents: write 
     uses: datajoint/.github/.github/workflows/semantic-release.yaml@main
