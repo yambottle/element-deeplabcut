@@ -4,7 +4,7 @@ on:
 
 jobs:
   call_semantic_release:
-    permissions:
-        id-token: write
-        contents: write 
     uses: datajoint/.github/.github/workflows/semantic-release.yaml@main
+    with:
+      APP_ID: ${{ secrets.APP_ID }}
+      ELEMENT_GET_TOKEN_KEY: ${{ secrets.ELEMENT_GET_TOKEN_KEY }}
