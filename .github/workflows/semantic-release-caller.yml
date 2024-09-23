@@ -7,4 +7,4 @@ jobs:
     uses: datajoint/.github/.github/workflows/semantic-release.yaml@main
     with:
       APP_ID: ${{ secrets.APP_ID }}
-      ELEMENT_GET_TOKEN_KEY: ${{ secrets.ELEMENT_GET_TOKEN_KEY }}
+      GET_TOKEN_KEY: ${{ secrets.ELEMENT_GET_TOKEN_KEY }}
